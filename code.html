@@ -1,0 +1,23 @@
+sentences=input('Enter a few sentences: \n')
+#tedade kalamat:
+sentences1=sentences.replace('.',' ')
+sentences1=sentences1.replace('!',' ')
+sentences1=sentences1.replace('?',' ')
+sentences1=sentences1.replace(':',' ')
+sentences1=sentences1.replace(',',' ')
+words=sentences1.split(' ')
+d=words.count('')
+k_num=len(words)-d
+print('Number of words= ',k_num)
+#tedade horoof:
+letters=sentences1.replace(' ','')
+h_num=len(letters)
+print('Number of letters= ',h_num)
+#tedade jomalat:
+sentence=sentences.split('.')
+b=sentence.count('')
+j_num=len(sentence)-b
+print('Number of sentences= ',j_num)
+#'r' bejaie 'p':
+sentences2=sentences.replace('p','r')
+print('new sentences= ',sentences2)
