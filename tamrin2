@@ -1,0 +1,6 @@
+b=[]
+a=int(input("adad"))
+while (a!=0):
+b.append(a)
+a=int(input("adad"))
+print(b[::-1])
